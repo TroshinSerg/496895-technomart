@@ -5,25 +5,27 @@
 		<title>Интернет-магазин инструментов Техномарт</title>
 	</head>
 	<body>
+		<h1 class="visually-hidden">Интернет-магазин инструментов Техномарт</h1>
 		<header class="main-header">
-			<div class="">
+			<div class="header-shop-info">
 				<a class="site-logo">Техномарт</a>
 				<!--здесь будет форма поиска-->
-				<a class="wishlist-link" href="">Закладки: 0</a>
-				<a class="cart-link" href="cart.html">Корзина: 0</a>
+				<a class="wishlist-link" href="#">Закладки: 0</a>
+				<a class="cart-link" href="#">Корзина: 0</a>
 				<a class="checkout-link" href="#">Оформить заказ</a>
 			</div>
-			<section class="qqq">
-				<h1 class="site-name">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+			<section class="header-contacts">
+				<p class="site-name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 				<p class="contacts-in-header">
 					<span>+7 (812) 555-05-55</span>
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				</p>
-				<ul class="user-block">
-					<li><a class="login-link" href="">Войти</a></li>
-					<li><a class="sing-up-link" href="">Регистрация</a></li>
-				</ul>
 			</section>
+			<ul class="user-block">
+				<li class="login"><a href="#">Войти</a></li>
+				<li class="sing-up"><a href="#">Регистрация</a></li>
+			</ul>
+			
 			<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li><a href="/">Главная</a></li>
@@ -41,7 +43,7 @@
 				<h2 class="visually-hidden">Разделы сайта</h2>
 				<ul class="site-section-list">
 					<li class="site-section">
-						<h3 class="site-section-name">Материалы на любой вкус</h3>
+						<h3 class="site-section-name">Материалы</h3>
 						<a class="site-section-link" href="#">На любой вкус</a>
 						<span class="section-label">new</span>
 					</li>
@@ -90,15 +92,14 @@
 					<h2>Популярные товары:</h2>
 					<a class="btn popular-products-link" href="#">Все популярные товары</a>
 				</header>
-				<!-- emmet
-				ul.popular-products-list>li.popular-product*4>img.product-thumbnail-image+h3.product-name>a^div.product-price>span.old-price+span.price^.product-links>a.add-in-cart{Купить}+a.add-in-wishlist{В закладки}
-				-->	
-				<ul class="popular-products-list">
+				<ul class="products-list">
 					<li class="product">
-						<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 9000">
 						<h3 class="product-name">
 							<a href="#">Перфоратор BOSH BFG 9000</a>
 						</h3>
+						<a href="#">
+							<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 9000">
+						</a>
 						<div class="product-price">
 							<span class="old-price">32500 р.</span>
 							<span class="price">25500 р.</span>
@@ -109,10 +110,12 @@
 						</div>
 					</li>
 					<li class="product">
-						<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 3000">
 						<h3 class="product-name">
 							<a href="#">Перфоратор BOSH BFG 3000</a>
 						</h3>
+						<a href="#">
+							<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 3000">
+						</a>
 						<div class="product-price">
 							<span class="old-price">22500 р.</span>
 							<span class="price">15500 р.</span>
@@ -123,10 +126,12 @@
 						</div>
 					</li>
 					<li class="product">
-						<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 6000">
 						<h3 class="product-name">
 							<a href="#">Перфоратор BOSH BFG 6000</a>
 						</h3>
+						<a href="#">
+							<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 6000">
+						</a>
 						<div class="product-price">
 							<span class="old-price">30500 р.</span>
 							<span class="price">25500 р.</span>
@@ -137,10 +142,12 @@
 						</div>
 					</li>
 					<li class="product">
-						<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 2000">
 						<h3 class="product-name">
 							<a href="#">Перфоратор BOSH BFG 2000</a>
 						</h3>
+						<a href="#">
+							<img class="product-thumbnail-image" width="150" height="100" src="http://placehold.it/150x100" alt="Перфоратор BOSH BFG 2000">
+						</a>
 						<div class="product-price">
 							<span class="old-price"></span>
 							<span class="price">12500 р.</span>
@@ -149,6 +156,7 @@
 							<a class="add-in-cart" href="#">Купить</a>
 							<a class="add-in-wishlist" href="#">В закладки</a>
 						</div>
+						<span class="product-label">new</span>
 					</li>
 				</ul>
 			</section>
@@ -279,6 +287,9 @@
 				</p>
 			</div>
 		</footer>
-	    
+	    <section class="modal modal-map">
+	      	<h2 class="visually-hidden">Как до нас добраться</h2>
+	      	<span class="modal-close">x</span>
+    	</section>
 	</body>
 </html>
