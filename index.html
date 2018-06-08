@@ -283,13 +283,35 @@
 			</div>
 		</footer>
 	    <section class="modal modal-map">
-	      	<h2 class="visually-hidden">Как до нас добраться</h2>
-	      	<button class="modal-close" type="button">x</button>
+	      	<header>
+	      		<h2 class="visually-hidden">Как до нас добраться</h2>
+	      		<button class="modal-close" type="button">Закрыть</button>
+	      	</header>
+	      	<!-- здесь будет карта-->
     	</section>
     	<section class="modal modal-write-us">
-    		<h2 class="visually-hidden">Форма обратной связи</h2>
-	      	<button class="modal-close" type="button">x</button>
-	      	<!-- здесь будет форма -->
+    		<header>
+    			<h2 class="visually-hidden">Форма обратной связи</h2>
+    			<button class="modal-close" type="button">Закрыть</button>
+    		</header>
+    		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    			<label class="feedback-name">
+    				Ваше имя:
+    				<input type="text" name="feedback-name" placeholder="Имя Фамилия">
+    			</label>
+    			<label class="feedback-email">
+					Ваш e-mail:
+    				<input type="email" name="feedback-email" placeholder="email@example.com
+">
+    			</label>
+    			<label class="feedback-message">
+    				Текст письма:
+    				<textarea name="feedback-message" placeholder="В свободной форме"></textarea>
+    			</label>
+    			<button>Отправить</button>
+    		</form>
+
+	      	
     	</section>
 	</body>
 </html>
