@@ -8,7 +8,11 @@
 		<header class="main-header">
 			<div class="header-shop-info">
 				<a class="site-logo" href="/">Техномарт</a>
-				<!--здесь будет форма поиска-->
+				<form class="search" action="https://echo.htmlacademy.ru" method="post">
+					<label class="visually-hidden" for="site-search">Поиск по сайту</label>
+					<input id="site-search" type="search" name="search">
+					<button>Найти</button>
+				</form>
 				<a class="shop-info-btn wishlist-link" href="wishlist.html">Закладки: <span>0</span></a>
 				<a class="shop-info-btn cart-link not-empty" href="cart.html">Корзина: <span>10</span></a>
 				<a class="shop-info-btn checkout-link" href="checkout.html">Оформить заказ</a>
@@ -48,13 +52,45 @@
 			</ul>
 			<section class="filter">
 				<h2>Фильтр:</h2>
-				<!-- Здесь будет форма -->
+				<form class="products-filter" action="https://echo.htmlacademy.ru" >
+					<fieldset>
+						<legend>Цена:</legend>
+						<!-- сделать диапазон с двумя ползунками -->
+					</fieldset>
+					<fieldset>
+						<legend>Производители:</legend>
+						<label for="brand-bosch">Bosch</label>
+						<input id="brand-bosch" type="checkbox" name="brand-bosch" value="Bosch" checked>
+						<label for="brand-interskol">Интерскол</label>
+						<input id="brand-interskol" type="checkbox" name="brand-interskol" value="Интерскол">
+						<label for="brand-makita">Makita</label>
+						<input id="brand-makita" type="checkbox" name="brand-makita" value="Makita" checked>
+						<label for="brand-dewalt">DeWalt</label>
+						<input id="brand-dewalt" type="checkbox" name="brand-dewalt" value="DeWalt">
+						<label for="brand-hitachi">Hitachi</label>
+						<input id="brand-hitachi" type="checkbox" name="brand-hitachi" value="Hitachi">
+					</fieldset>
+					<fieldset>
+						<legend>Питание:</legend>
+						<label for="battery-power">Аккумуляторные</label>
+						<input id="battery-power" type="radio" name="power-supply" value="battery" checked>
+						<label for="network-supply">Сетевые</label>
+						<input id="network-supply" type="radio" name="power-supply" value="network-supply">
+					</fieldset>
+					<button>Показать</button>
+				</form>
 			</section>
 			<section class="category-products">
 				<h2 class="visually-hidden">Список товаров категории</h2>
 				<div class="sorting">
 					<h3>Сортировка:</h3>
-					<!-- Здесь будет форма -->
+					<button class="btn-sort sort-by-price active" type="button">По цене</button>
+					<button class="btn-sort sort-by-type" type="button">По типу</button>
+					<button class="btn-sort sort-by-functionality" type="button">По функционалу</button>
+
+					<button class="sort-up" type="button">Вверх</button>
+					<button class="sort-down" type="button">Вниз</button>
+
 				</div>
 				<ul class="products-list">
 					<li class="products-list-item">
@@ -200,9 +236,10 @@
 			</section>
 			<section class="modal modal-product-added">
 				<h2>Товар добавлен в корзину!</h2>
+				<button class="modal-close" type="button">Закрыть</button>
 				<a class="checkout-link" href="#">Оформить заказ</a>
 				<button class="modal-close continue-shopping" type="button">Продолжить покупки</button>
-				<button class="modal-close" type="button">x</button>
+				
 			</section>
 		</main>
 		<footer class="main-footer">
