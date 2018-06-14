@@ -3,14 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин инструментов Техномарт - Перфораторы</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
 			<div class="header-shop-info">
 				<a class="site-logo" href="/">Техномарт</a>
 				<form class="search" action="https://echo.htmlacademy.ru" method="post">
 					<label class="visually-hidden" for="site-search">Поиск по сайту</label>
-					<input id="site-search" type="search" name="search">
+					<input id="site-search" type="search" name="search" value="Поиск:">
 					<button>Найти</button>
 				</form>
 				<a class="shop-info-btn wishlist-link" href="wishlist.html">Закладки: <span>0</span></a>
@@ -25,8 +28,7 @@
 				</p>
 			</section>
 			<ul class="user-block">
-				<li class="user-name">Равшан Джамшутович</li>
-				<li class="logout"><a href="logout.html">Выйти</a></li>
+				<li class="user-name">Равшан Джамшутович <a class="logout" href="logout.html">Выйти</a></li>
 				<li class="user-orders"><a href="orders.html">Мои заказы</a></li>
 				<li class="user-profile"><a href="profile.html">Личный кабинет</a></li>
 			</ul>
@@ -88,8 +90,8 @@
 					<a class="link-sort sort-by-type" href="#">По типу</a>
 					<a class="link-sort sort-by-functionality" href="#">По функционалу</a>
 
-					<a class="sort-up" href="#">Вверх</a>
-					<a class="sort-down" href="#">Вниз</a>
+					<a class="sort-up" href="#">По возрастанию</a>
+					<a class="sort-down" href="#">По убыванию</a>
 
 				</div>
 				<ul class="products-list">
@@ -237,7 +239,7 @@
 			<section class="modal modal-product-added">
 				<h2>Товар добавлен в корзину!</h2>
 				<button class="modal-close" type="button">Закрыть</button>
-				<a class="checkout-link" href="#">Оформить заказ</a>
+				<a class="btn" href="#">Оформить заказ</a>
 				<button class="modal-close continue-shopping" type="button">Продолжить покупки</button>
 				
 			</section>
