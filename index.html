@@ -8,15 +8,15 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
+		<div class="red-box"></div>
 		<h1 class="visually-hidden">Интернет-магазин инструментов Техномарт</h1>
 		<header class="main-header">
 			<div class="header-shop-info">
 				<div class="container">
 					<a class="site-logo">Техномарт</a>
 					<form class="search" action="https://echo.htmlacademy.ru" method="post">
-						<label class="visually-hidden" for="site-search">Поиск по сайту</label>
 						<input id="site-search" type="search" name="search" value="Поиск:">
-						<button type="submit">Найти</button>
+						<label class="visually-hidden" for="site-search">Поиск по сайту</label>
 					</form>
 					<a class="shop-info-btn wishlist-link" href="wishlist.html">Закладки: <span>0</span></a>
 					<a class="shop-info-btn cart-link" href="cart.html">Корзина: <span>0</span></a>
@@ -51,12 +51,13 @@
 			</div>
 		</header>
 		<main>
-			<section class="site-sections container"> <!-- центровщик -->
+			<section class="site-sections container">
 				<h2 class="visually-hidden">Разделы сайта</h2>
 				<ul class="site-section-list">
 					<li class="site-section new">
 						<h3 class="site-section-name">Материалы</h3>
 						<a class="site-section-link" href="materials.html">На любой вкус</a>
+						<!--<div class="flag flag-new"><span class="visually-hidden">Новинка!</span></div>-->
 					</li>
 					<li class="site-section">
 						<h3 class="site-section-name">Инструмент</h3>
@@ -86,11 +87,11 @@
 							</li>
 						</ul>
 						<div class="slider-indicators">
-							<button class="active" type="button">1</button>
-							<button type="button">2</button>
+							<button class="active" type="button"><span class="visually-hidden">слайд 1</span></button>
+							<button type="button"><span class="visually-hidden">слайд 2</span></button>
 						</div>
-						<button class="slider-btn slider-btn-back" type="button">Назад</button>
-						<button class="slider-btn slider-btn-next" type="button">Вперед</button>
+						<button class="slider-btn slider-btn-back" type="button"><span class="visually-hidden">Назад</span></button>
+						<button class="slider-btn slider-btn-next" type="button"><span class="visually-hidden">Впере</span></button>
 					</li>
 					<li class="site-section">
 						<h3 class="site-section-name">Скидки 50%</h3>
@@ -210,7 +211,7 @@
 							<li class="nav-item"><a class="nav-link" href="#">Кредит</a></li>
 						</ul>
 						<div class="tabs-wrap">
-							<section class="tab-content service service-delivery">
+							<section class="tab-content service service-delivery active">
 								<h3>Доставка</h3>
 								<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
 							</section>
@@ -285,9 +286,9 @@
 						Все права защищены
 					</p>
 					<ul class="socials">
-						<li><a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a></li>
-						<li><a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a></li>
-						<li><a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a></li>
+						<li><a class="social-btn social-btn-vk" href="https://vk.com"><span class="visually-hidde-n">Вконтакте</span></a></li>
+						<li><a class="social-btn social-btn-fb" href="https://facebook.com"><span class="visually-hidde-n">Фейсбук</span></a></li>
+						<li><a class="social-btn social-btn-inst" href="https://instagram.com"><span class="visually-hidde-n">Инстаграм</span></a></li>
 					</ul>
 					<p class="feedback">
 						Обратная связь:
