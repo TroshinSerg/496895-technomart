@@ -86,11 +86,19 @@
 							</li>
 						</ul>
 						<div class="slider-indicators">
-							<button class="active" type="button"><span class="visually-hidden">слайд 1</span></button>
-							<button type="button"><span class="visually-hidden">слайд 2</span></button>
+							<button class="active" type="button">
+								<span class="visually-hidden">Слайд 1</span>
+							</button>
+							<button type="button">
+								<span class="visually-hidden">Слайд 2</span>
+							</button>
 						</div>
-						<button class="slider-btn slider-btn-back" type="button"><span class="visually-hidden">Назад</span></button>
-						<button class="slider-btn slider-btn-next" type="button"><span class="visually-hidden">Впере</span></button>
+						<button class="slider-btn slider-btn-back" type="button">
+							<span class="visually-hidden">Назад</span>
+						</button>
+						<button class="slider-btn slider-btn-next" type="button">
+							<span class="visually-hidden">Вперед</span>
+						</button>
 					</li>
 					<li class="site-section">
 						<h3 class="site-section-name">Скидки 50%</h3>
@@ -247,10 +255,14 @@
 				</section>
 			</div>
 			<section class="modal modal-product-added">
-				<h2>Товар добавлен в корзину!</h2>
-				<a class="btn" href="#">Оформить заказ</a>
-				<button class="modal-close continue-shopping" type="button">Продолжить покупки</button>
-				<button class="modal-close" type="button">Закрыть</button>
+				<div class="modal-inner">
+					<h2>Товар добавлен в корзину!</h2>
+					<button class="modal-close" type="button">
+						<span class="visually-hidden">Закрыть</span>
+					</button>
+					<a class="btn" href="#">Оформить заказ</a>
+					<button class="btn modal-close continue-shopping" type="button">Продолжить покупки</button>
+				</div>
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -332,8 +344,7 @@
     			</label>
     			<button class="btn" type="submit">Отправить</button>
     		</form>
-
-	      	
     	</section>
+    	<script src="js/main.js"></script>
 	</body>
 </html>

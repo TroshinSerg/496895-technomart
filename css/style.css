@@ -1016,14 +1016,15 @@ img {
     position: absolute;
     top: 45px;
 
-    display: none;
+    visibility: hidden;
 
     min-width: 135px;
 
     background-color: #fff;
 }
 .products-list-item:hover .product-links {
-    display: block;
+ 
+    visibility: visible;
 }
 .products-list-item:hover img {
     opacity: 0;
@@ -1803,7 +1804,7 @@ input[type='radio'][disabled]:checked + label:focus::before {
 .modal {
     display: none; /* временно */
 }
-.modal-close {
+.modal-close:not(.continue-shopping) {
     position: absolute;
     top: 9px;
     right: 9px;
@@ -1929,6 +1930,7 @@ input[type='radio'][disabled]:checked + label:focus::before {
     border-top: 7px solid #ff5257;
     background-image: linear-gradient(to top,  #f4f4f4 110px, #fff 110px);
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
+    z-index: 3;
 }
 .modal-inner {
     display: flex;
@@ -1965,6 +1967,9 @@ input[type='radio'][disabled]:checked + label:focus::before {
 
     color: #000;
     background-color: #fff;
+}
+.modal-show {
+	display: block;
 }
 /* описание категории */
 .category-description {
