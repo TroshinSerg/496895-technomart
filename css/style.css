@@ -1023,7 +1023,6 @@ img {
     background-color: #fff;
 }
 .products-list-item:hover .product-links {
- 
     visibility: visible;
 }
 .products-list-item:hover img {
@@ -1801,6 +1800,20 @@ input[type='radio'][disabled]:checked + label:focus::before {
     color: #ee3643;
 }
 /* модальные окна */
+@keyframes bounce {
+    0% {
+        transform: translateX(-2000px);
+    }
+    70% {
+        transform: translateX(30px);
+    }
+    90% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 .modal {
     display: none; /* временно */
 }
@@ -1918,19 +1931,20 @@ input[type='radio'][disabled]:checked + label:focus::before {
     font-weight: normal;
 
     position: fixed;
+    z-index: 3;
     top: 50%;
     left: 50%;
 
     width: 620px;
+    margin-top: -10%;
+    margin-left: -310px;
     padding: 48px 80px 37px;
-
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
 
     color: #000;
     border-top: 7px solid #ff5257;
     background-image: linear-gradient(to top,  #f4f4f4 110px, #fff 110px);
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
-    z-index: 3;
 }
 .modal-inner {
     display: flex;
@@ -1969,7 +1983,10 @@ input[type='radio'][disabled]:checked + label:focus::before {
     background-color: #fff;
 }
 .modal-show {
-	display: block;
+    display: block;
+
+    animation-name: bounce;
+    animation-duration: .7s;
 }
 /* описание категории */
 .category-description {
