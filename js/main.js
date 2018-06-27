@@ -41,11 +41,13 @@ if (modalWriteUs) {
 	writeUsForm.addEventListener("submit", function (evt) {
 		if (!feedbackName.value || !feedbackEmail.value) {
 			evt.preventDefault();
+            modalWriteUs.classList.add("modal-error");
 		}
 	});
 	writeUsClose.addEventListener("click", function (evt) {
 		evt.preventDefault();
-		modalWriteUs.classList.remove("modal-show");
+        modalWriteUs.classList.remove("modal-show");
+        modalWriteUs.classList.remove("modal-error");
 	});
 }
 ///////////////////// модальное окно - товар добавлен
